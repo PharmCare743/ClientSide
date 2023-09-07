@@ -1,0 +1,50 @@
+.gradientForHeader {
+ 
+
+  top: 0;
+  left: 0;
+ 
+  background: linear-gradient(
+    to right,
+    #0000ff,
+    #ff0000,
+    #ffff00
+    
+  );
+  background-size: 540% 540%;
+  
+  z-index: 9;
+}
+
+.gradientForLoginScreenBackground {
+ 
+  top: 0;
+  left: 0;
+  
+  background: radial-gradient(
+    
+  #0000ffb3,
+  #0000ff66,
+  #0000ff33
+  );
+  background-size: 540% 540%;
+  
+  z-index: 9;
+}
+
+
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* #2196F3 */
+/* animation: gradient-animation 9s ease infinite; */
