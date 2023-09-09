@@ -287,7 +287,7 @@ const Listing = () => {
         window.location.pathname.split("/").length - 1
       ] == "medicine" && (
         <div className="row justify-content-center mt-3 mb-5">
-          <Paper className=" col-md-9 text-center">
+          <Paper className=" col-md-9 text-center" style={{marginLeft:"24px"}}>
             {alphabets.map((item, index) => (
               <IconButton
                 key={index}

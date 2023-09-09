@@ -65,7 +65,7 @@ const Prescription = () => {
       }}
     >
       <ToastContainer />
-      <Paper className="pb-3">
+      <Paper className="pb-3"  style={{marginLeft:"12px"}}>
       <div className="col-sm-12 col-md-6 mt-3 mx-2">
         <TextField
           variant="outlined"
