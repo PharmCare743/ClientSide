@@ -158,17 +158,17 @@ const DrawerComp = ({dataMenu}) => {
   });
 
   return (
-    <Fragment >
+    <nav className={classes.mainMenuDrawer}>
       <Drawer classes={{
           paper: classes.drawerPaper,
           
         }}  open={openDrawer} onClose={() => setOpenDrawer(false)}>
         <List >{getMenus(null, dataMenu)}</List>
       </Drawer>
-      <div className="d-flex my-2">
+      <div className="d-flex justify-content-center">
        <IconButton
         onClick={() => setOpenDrawer(!openDrawer)}
-        sx={{ color: "white",marginLeft: "20px", marginRight:'auto'}}
+        sx={{ color:(theme=>theme.palette.primary.main),marginLeft: "20px", marginRight:'auto'}}
       >
         <MenuIcon />
       </IconButton>
@@ -186,7 +186,7 @@ const DrawerComp = ({dataMenu}) => {
           checkout={checkout}
           
         />
-    </Fragment>
+    </nav>
   );
 };
 

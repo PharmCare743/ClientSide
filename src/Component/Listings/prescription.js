@@ -1,4 +1,4 @@
-import { Button, TextField } from "@mui/material";
+import { Button, Paper, TextField } from "@mui/material";
 import React, { useRef, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -65,6 +65,7 @@ const Prescription = () => {
       }}
     >
       <ToastContainer />
+      <Paper className="pb-3">
       <div className="col-sm-12 col-md-6 mt-3 mx-2">
         <TextField
           variant="outlined"
@@ -137,6 +138,7 @@ const Prescription = () => {
           Submit
         </Button>
       </div>
+      </Paper>
     </div>
   );
 };

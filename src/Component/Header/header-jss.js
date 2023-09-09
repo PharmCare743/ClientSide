@@ -359,11 +359,24 @@ const useStyles = makeStyles()((theme, _params, classes) => ({
       justifyContent: "center",
     },
   },
+  mainMenuDrawer: {
+    backgroundColor: theme.palette.background.paper,
+    padding: theme.spacing(2, 0),
+    boxShadow: theme.shadows[3],
+    position: "relative",
+    transition: "padding 0.3s ease",
+    height:56,
+    "& > div": {
+      display: "flex",
+      justifyContent: "center",
+
+    },
+  },
   headMenu: {
-    fontSize: 12,
-    padding: `${theme.spacing(0.5)} ${theme.spacing(1)} ${theme.spacing(
-      0.5
-    )} ${theme.spacing(2)}`,
+    // fontSize: 12,
+    // padding: `${theme.spacing(0.5)} ${theme.spacing(1)} ${theme.spacing(
+    //   0.5
+    // )} ${theme.spacing(2)}`,
     minHeight: "auto",
     margin: `0 ${theme.spacing(0.5)}`,
     lineHeight: "2em",
